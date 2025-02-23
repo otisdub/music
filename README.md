@@ -11,7 +11,7 @@ Welcome to Otisdub Music. Here is what you need to know
 - Links to buy music (with exceptions)
 
 ## When You Can Contribute
-Make sure to see pull requests before contributing! There can only be ONE pull request for these topics in the specified timeframes.
+Make sure to see pull requests before contributing! There can only be ONE [pull request](https://github.com/otisdub/music/pulls) for these topics in the specified timeframes.
 
 - Design of website: Once per week
 - Bug fixes: No restriction
