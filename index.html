@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otisdub Music</title>
+    <title>Otisdub Music - Buy My CD</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -20,16 +20,21 @@
             max-width: 800px;
             margin: auto;
         }
-        a {
-            display: inline-block;
-            padding: 10px 20px;
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
             background-color: #007bff;
             color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
+            border: none;
+            cursor: pointer;
         }
-        a:hover {
+        button:hover {
             background-color: #0056b3;
         }
         .license {
@@ -41,9 +46,28 @@
 </head>
 <body>
     <div class="container">
-        <h1>Otisdub Music</h1>
+        <h1>Buy My CD - Otisdub Music</h1>
         <p>Order my new CD directly from Kunaki!</p>
-        <a href="https://kunaki.com/sales.asp?PID=PX00Z13QW3" target="_blank">Buy My CD</a>
+
+        <form action="https://kunaki.com/HTTPService.ASP" method="GET" target="_blank">
+            <input type="hidden" name="RequestType" value="ShippingOptions">
+            <input type="hidden" name="ProductId" value="PX00Z13QW3">
+            <input type="hidden" name="ResponseType" value="html">
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="Quantity" id="quantity" value="1" min="1" required>
+
+            <label for="state">State/Province:</label>
+            <input type="text" name="State_Province" id="state" required>
+
+            <label for="postal">Postal Code:</label>
+            <input type="text" name="PostalCode" id="postal" required>
+
+            <label for="country">Country:</label>
+            <input type="text" name="Country" id="country" value="United States" required>
+
+            <button type="submit">Get Shipping Options and Checkout</button>
+        </form>
 
         <div class="license">
             <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
