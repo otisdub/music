@@ -4,7 +4,7 @@ Welcome to Otisdub Music. Here is what you need to know
 ## What You CAN Contribute To
 - The design of the website
 - Bug fixes
-- Improving app icon (see also: When You Can Contribute)
+- Improving app icon (see also: [When You Can Contribute](https://github.com/otisdub/music/blob/main/README.md#when-you-can-contribute))
 
 ## What You CAN'T Contribute To
 - The Creative Commons license
